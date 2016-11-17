@@ -1,0 +1,24 @@
+{
+  "name": "throttle-debounce",
+  "version": "1.0.0",
+  "description": "Decorators for throttle and debounce functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tamazlykar/throttle-debounce.git"
+  },
+  "author": "Tamazlykar Daniil <tamazlykar_dv@bw-sw.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tamazlykar/throttle-debounce/issues"
+  },
+  "homepage": "https://github.com/tamazlykar/throttle-debounce#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2",
+    "sinon": "^1.17.6"
+  }
+}
