@@ -2,6 +2,9 @@
 
 This library implements throttle and debounce functions.
 
+This library implements in JavaScript and also you can use them 
+as decorators in TypeScript 
+
 ## throttle(func, wait)
 Creates a throttled function that only invokes func at most once per every wait milliseconds.
 The throttled function comes with a cancel method to cancel delayed func invocations and a flush method to immediately invoke them.
@@ -15,12 +18,21 @@ Subsequent calls to the throttled function return the result of the last func in
 2. wait (number) - The number in milliseconds to delay
 
 ```
+***JavaScript***
 // web
 var f = td.throttle(function(a) { console.log('Hello ' + a) }, 2000);
 
 // node
 var td = requare('./index');
 var f = td.throttle(function(a) { console.log('Hello ' + a) }, 2000);
+
+***TypeScript***
+class Foo {
+  @debounce(5000)
+  f1() {}
+  @throttle(5000)
+  f2() {}
+}
 ```
 
 ## debounce(func, wait)
